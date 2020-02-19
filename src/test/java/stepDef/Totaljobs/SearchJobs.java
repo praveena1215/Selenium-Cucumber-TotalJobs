@@ -1,9 +1,7 @@
 package stepDef.Totaljobs;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import io.qameta.allure.Feature;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,7 +15,8 @@ public class SearchJobs {
 	
 	public RemoteWebDriver driver;
 	
-	
+	@Test
+	@Feature("Open browser feature")
 	@Given("^launch the chrome browser \"([^\"]*)\"$")
 	public void launch_the_chrome_browser(String url) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
